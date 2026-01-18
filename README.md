@@ -31,3 +31,34 @@ A **highly compressed, lightweight CSS flag icon library** using sprite sheets.
 | 64×64 | `.f64` |
 
 
+---
+
+## Usage
+
+Include the CSS file:
+
+`<link rel="stylesheet" href="css.css">`
+
+Use a flag icon:
+
+`<i class="flag f24 gb"></i>
+<i class="flag f32 us"></i>
+<i class="flag f48 fr"></i>`
+
+## WebP with PNG Fallback
+
+Each size automatically prefers WebP and falls back to PNG:
+
+`.flag.f24 {
+  background-image: url("webp/24.webp"), url("24.png");
+}`
+
+
+## Example
+
+Open example.html in your browser to see all flags rendered with search and size controls.
+
+
+## License
+
+This project is released under the MIT License. You are free to use, modify, and distribute it for personal or commercial projects.
